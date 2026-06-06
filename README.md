@@ -1,22 +1,23 @@
 # 🧬 Modelo2-final: Detección de Cáncer de Mama mediante Machine Learning
 
 **Materia:** Modelos 2  
-**Autores:** Alejandro Orrego Roldan, Luis David Martinez Estudiante, Leonardo Jose Amaris Dominguez Estudiante  
+**Autores:** Alejandro Orrego Roldán, Luis David, Leonardo  
 
 🔗 **[Enlace al Video de Sustentación (10 Minutos) - Haz clic aquí] (PON_TU_LINK_AQUI)**
 
-## 📌 Descripción del Proyecto
+## Descripción del Proyecto
 Este proyecto de Machine Learning tiene como objetivo desarrollar un modelo predictivo capaz de clasificar tumores mamarios (Malignos/Benignos) maximizando la métrica de **Recall** (Sensibilidad) para evitar Falsos Negativos clínicos. 
 
-Se implementó un pipeline de datos robusto que abarca la exploración y detección de valores atípicos mediante *Isolation Forest*, culminando en un **Estudio Comparativo Analítico** de cinco algoritmos (Regresión Logística, Random Forest, SVM, KNN y Redes Neuronales). 
+Se implementó un pipeline de datos robusto que abarca la exploración, limpieza y un **Estudio Comparativo Analítico** de cinco arquitecturas algorítmicas (Regresión Logística, Random Forest, SVM, KNN y Redes Neuronales). 
 
-Para determinar la arquitectura más eficiente, los modelos fueron entrenados y evaluados sistemáticamente a través de **6 escenarios de reducción de dimensionalidad e Ingeniería de Características**:
-1. **Crudo (Línea Base):** 30 variables originales.
-2. **Filtro Manual:** Reducción basada en correlación estadística lineal.
-3. **Método Incrustado (LASSO):** Regularización L1 para selección intrínseca.
-4. **Filtro No Lineal (Mutual Information):** Captura de dependencias entrópicas complejas.
-5. **Método Wrapper (RFE):** Eliminación recursiva impulsada por modelado predictivo.
-6. **Transformación Espacial (PCA):** Análisis de Componentes Principales.
+Para determinar el subespacio dimensional más eficiente, los modelos fueron entrenados y evaluados sistemáticamente a través de **6 escenarios de Ingeniería de Características y Transformación Espacial**:
+
+1. **Crudo (Línea Base):** 30 variables morfológicas originales estandarizadas.
+2. **Selección LASSO (Método Incrustado):** Regularización L1 para combatir multicolinealidad y seleccionar variables lineales robustas.
+3. **Mutual Information (Filtro No Lineal):** Captura de dependencias entrópicas y geométricas complejas.
+4. **RFE (Método Wrapper):** Eliminación recursiva de características impulsada por modelado predictivo.
+5. **PCA (Transformación No Supervisada):** Reducción ortogonal conservando el 95% de la varianza explicada.
+6. **Discriminante de Fisher - LDA (Transformación Supervisada):** Proyección del espacio hiperdimensional a 1 único componente maximizando la separación de las clases.
 
 ---
 
@@ -28,11 +29,11 @@ El proyecto está diseñado de forma modular secuencial para garantizar su repro
 │
 ├── 📁 data/                            # Base de datos original y exportaciones de los 6 escenarios
 │
-├── 📓 01_Exploracion_y_Limpieza.ipynb  # EDA, correlación y análisis clínico de Atípicos (Isolation Forest)
-├── 📓 02_Filtros_y_Reduccion.ipynb     # Pipeline de los 6 escenarios (Manual, LASSO, MI, RFE, PCA)
-├── 📓 03_Estudio_Comparativo.ipynb     # Entrenamiento, matrices de confusión y Benchmarking gráfico
+├── 📓 01_Exploracion_y_Limpieza.ipynb  # EDA, correlación bivariada y análisis clínico de atípicos
+├── 📓 02_Filtros_y_Reduccion.ipynb     # Pipeline de los 6 escenarios, auditoría de variables y Scree Plot (PCA)
+├── 📓 03_Estudio_Comparativo.ipynb     # Entrenamiento, matrices de confusión y benchmarking gráfico final
 │
 ├── 📁 reporte/
 │   └── reporte_final.pdf               # Artículo científico del proyecto en formato IEEE
 │
-└── 📄 README.md                        # Guía de ejecución del proyecto
+└── 📄 README.md                        # Documentación del proyecto
