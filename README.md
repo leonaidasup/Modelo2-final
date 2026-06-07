@@ -1,4 +1,4 @@
-# 🧬 Modelo2-final: Detección de Cáncer de Mama mediante Machine Learning
+# Modelo2-final: Detección de Cáncer de Mama mediante Machine Learning
 
 **Materia:** Modelos 2  
 **Autores:** Alejandro Orrego Roldán, Luis David, Leonardo  
@@ -21,19 +21,19 @@ Para determinar el subespacio dimensional más eficiente, los modelos fueron ent
 
 ---
 
-## 📂 Arquitectura del Repositorio
+## Arquitectura del Repositorio
 El proyecto está diseñado de forma modular secuencial para garantizar su reproducibilidad técnica y correcta evaluación paso a paso.
 
 ```text
-📁 Modelo2-final/
+Modelo2-final/
 │
-├── 📁 data/                            # Base de datos original y exportaciones de los 6 escenarios
+├── data/                            # Base de datos original y exportaciones de los 6 escenarios
 │
-├── 📓 01_Exploracion_y_Limpieza.ipynb  # EDA, correlación bivariada y análisis clínico de atípicos
-├── 📓 02_Filtros_y_Reduccion.ipynb     # Pipeline de los 6 escenarios, auditoría de variables y Scree Plot (PCA)
-├── 📓 03_Estudio_Comparativo.ipynb     # Entrenamiento, matrices de confusión y benchmarking gráfico final
+├── 01_Exploracion_y_Limpieza.ipynb  # EDA, correlación bivariada y análisis clínico de atípicos
+├── 02_Filtros_y_Reduccion.ipynb     # Pipeline de los 6 escenarios, auditoría de variables y Scree Plot (PCA)
+├── 03_Estudio_Comparativo.ipynb     # Entrenamiento, matrices de confusión y benchmarking gráfico final
 │
-├── 📁 reporte/
+├── reporte/
 │   └── reporte_final.pdf               # Artículo científico del proyecto en formato IEEE
 │
-└── 📄 README.md                        # Documentación del proyecto
+└── README.md                        # Documentación del proyecto
