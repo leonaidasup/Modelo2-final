@@ -1,7 +1,7 @@
 # 🧬 Modelo2-final: Detección de Cáncer de Mama mediante Machine Learning
 
 **Materia:** Modelos 2  
-**Autores:** Alejandro Orrego Roldán, Luis David, Leonardo  
+**Autores:** Alejandro Orrego Roldán, Luis David Martínez Galindo, Leonardo José Amaris Dominguez 
 
 🔗 **[Enlace al Video de Sustentación (10 Minutos) - Haz clic aquí] (PON_TU_LINK_AQUI)**
 
