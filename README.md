@@ -3,7 +3,7 @@
 **Materia:** Modelos 2  
 **Autores:** Alejandro Orrego Roldán, Luis David, Leonardo  
 
-🔗 **[Enlace al Video de Sustentación (10 Minutos) - Haz clic aquí] (PON_TU_LINK_AQUI)**
+https://youtu.be/RX8XugLHQyA
 
 ## Descripción del Proyecto
 Este proyecto de Machine Learning tiene como objetivo desarrollar un modelo predictivo capaz de clasificar tumores mamarios (Malignos/Benignos) maximizando la métrica de **Recall** (Sensibilidad) para evitar Falsos Negativos clínicos. 
